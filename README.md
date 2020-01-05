@@ -7,6 +7,14 @@ ruby '2.6.5'
 react '16.12.0'
 
 ## Important
+Go to https://developers.facebook.com, create and app, then create config/initializers/koala.rb file and add:
+
+Koala.configure do |config|
+
+  config.app_id = MY_APP_ID
+  config.app_secret = MY_APP_SECRET
+
+end
 
 ## Dependencies
 
@@ -14,10 +22,6 @@ react '16.12.0'
 Install the required gems:
 ```bash
 bundle install
-```
-Install dependencies:
-```bash
-yarn install
 ```
 Run the migrations:
 ```bash
